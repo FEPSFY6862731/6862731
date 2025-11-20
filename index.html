@@ -117,7 +117,7 @@ reaching a stage where information from the selected instances is contrary to th
 classifier confidence to drop, as in Vlachos (2008).”
   </pre></p>
  <h3 id="Analysis and Discussion">Analysis and Discussion</h3>
-  <p id="AnalysisandDiscussion_InText">
+  <p id="Analysis_InText">
   Table 1: Data on cost and lifespan of bridge repairs
   <table>
     <tr>
@@ -185,9 +185,9 @@ classifier confidence to drop, as in Vlachos (2008).”
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisanddiscussionCount = displayWordCount("AnalysisandDiscussion_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisandDiscussionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
