@@ -58,7 +58,7 @@ p.ex1 {
 .column {
   float: left;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 3000px; /* Should be removed. Only for demonstration */
 }
 
 .left {
@@ -79,19 +79,54 @@ p.ex1 {
 </head>
 <body>
 
-<h2>Two Unequal Columns</h2>
-
 <div class="row">
-  <div class="column left" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  <div class="column left" style="background-color:#lavenderblush;">
+    <h2>Contents</h2>
+    <p> 
+    <!table of contents>
+    <table>
+      <tr>
+        <th><h3>Table of Contents</h3></th>
+      </tr>
+      <tr>
+        <td><a href="#Abstract">Abstract</td>
+      </tr>
+      <tr>
+        <td><a href="#Introduction">Introduction</td>
+      </tr>
+      <tr>
+        <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+      </tr>
+      <tr>
+        <td><a href="#References">References</td>
+      </tr>
+    </table></body>
+    
+          </p>
   </div>
-  <div class="column right" style="background-color:#bbb;">
+  <div class="column right" style="background-color:#lavenderblush;">
     <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
 </div>
+<style>
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 30%;
 
+          }
+
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+           <body style="background-color:#FFFFFF;margin-left:50px;">
 </body>
   
 <head>
