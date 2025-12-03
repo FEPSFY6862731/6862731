@@ -88,6 +88,9 @@
   display: table;
   clear: both;
 }
+.section-spacing {
+  padding: 15px 0;
+}
 </style>
 <body>
 
@@ -95,7 +98,7 @@
   <div class="column left" style="background-color:lavenderblush;">
     <p> 
     <!table of contents>
-    <table>
+    <table class="section-spacing">
       <tr>
         <th><h3>Table of Contents</h3></th>
       </tr>
@@ -118,7 +121,7 @@
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
-<div id="last-updated">Loading last update time...</div>
+<div id="last-updated" class="section-spacing">Loading last update time...</div>
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
     Verify Last Modified Time
@@ -168,7 +171,7 @@
   <!-- ////////////////////////////// Word count function ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
+<p id="totalWordCount" class="section-spacing"></p>
 <hr>
 <script>
   // Function to calculate and display word count for a specified section
