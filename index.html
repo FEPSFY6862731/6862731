@@ -23,6 +23,17 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+        body {
+  transition: background-color 0.8s ease; /* smooth fade */
+  background-color: white; /* default color */
+}
+
+/* Apply transition to columns too */
+.column {
+  transition: background-color 0.8s ease;
+  background-color: inherit; /* inherit body background by default */
+}
+}
       </style>
   </head>
   <hr>
@@ -100,7 +111,7 @@
 <body>
 
 <div class="row">
-  <div class="column left" style="background-color:lavenderblush;">
+  <div class="column left">
     <p> 
     <!table of contents>
     <table class="section-spacing">
@@ -121,18 +132,18 @@
       </tr>
     </table></body>
 
-    <br>
-<select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
-    <br>
-    <option value="black">Black
-        <option value="orange">Orange
-            <option value="flamingred">Fuschia
-                <option value="lightyellow">Pale Yellow
-                    <option value="cyan">Cyan
-                        <option value="yellow">Yellow
-                            <option value="red">Red
-                                <option value="white">White</option>
-</select>&nbsp;&nbsp;Change Text Colour
+  <select onchange="document.body.style.backgroundColor = this.value;">
+    <option value="azure">Blue</option>
+    <option value="seashell">Orange</option>
+    <option value="mintcream">Mint</option>
+    <option value="lightyellow">Yellow</option>
+    <option value="snow">Pink</option>
+    <option value="honeydew">Green</option>
+    <option value="whitesmoke">Grey</option>
+    <option value="lightcyan">Cyan</option>
+    <option value="lavender">Purple</option>
+</select>
+&nbsp;&nbsp; Change Background Color
 
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -219,7 +230,7 @@
   </div>
 
 
-  <div class="column right" style="background-color:lavenderblush;">
+  <div class="column right">
   
     <p>
        <h3 id="Abstract">Abstract</h3>
