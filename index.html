@@ -241,49 +241,39 @@ Insect flight demonstrates how controlled and efficient movement can be achieved
     
 <h3 id="Introduction">Introduction</h3>
     <p id="Introduction_InText">
-    “Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-to improve the classification model. Various strategies have been proposed including; Query by
-Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-labels. After adding the newly labeled instances to the current training set, a revised model is
-subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-learning at each epoch. The process is continued until some stopping criterion has been met, such as
-reaching a stage where information from the selected instances is contrary to the model, causing the
-classifier confidence to drop, as in Vlachos (2008).”
+  Insects can fly with remarkable control and efficiency, despite their small size. They have abilities that traditional aircraft designs find difficult to replicate, such as hovering in place, quickly changing directions, and flying backward. Engineers find insect flight important because it works under very different conditions than airplanes and helicopters. Insect wings move through air slowly and at small scales, where air resistance and viscosity are major factors. This paper looks at the main mechanisms that allow insects to fly under these tough conditions and discusses how current research is shaping engineering designs. 
   </p>
  <h3 id="Analysis and Discussion">Analysis and Discussion</h3>
   <p id="Analysis_InText">
-  Table 1: Data on cost and lifespan of bridge repairs
+<h4><b>Unsteady Lift and Leading-Edge Vortices</b></h4>
+In airplanes, lift is described with steady aerodynamics, where airflow is smooth and changes gradually. Insect flight differs because the wings constantly flap, causing rapid airflow changes. This is known as unsteady aerodynamics. A key feature of insect flight is the leading-edge vortex (LEV), a spinning motion of air that resembles a small whirlwind. As an insect wing moves through the air, a spinning area of air forms along the front edge of the wing. This vortex stays attached to the wing for most of the stroke and helps generate more lift than a standard wing could at the same speed. Experiments by Dickinson (Shyy et al., 2013) showed that this vortex is the main reason insects can remain airborne, and the lift produced is often much higher than what airplane equations predict. This explains how insects can hover and fly slowly without stalling.
+<h4><b>Clap-and-Fling, Wake Capture, and Wing Shape and Flexibility</b></h4>
+Another key mechanism in insect flight is the clap-and-fling motion. At the top of the wingbeat, the wings clap together above the insect’s body and then quickly separate. This creates strong air movement between the wings, increasing lift. This effect is especially important for tiny insects. In addition, insects engage in wake capture. As the wings move, they leave behind disturbed air known as a wake. When the wing moves back through this region on the next stroke, it reuses part of the energy instead of generating new airflow, which improves energy efficiency. 
+Insect wings are also flexible, bending slightly during flight. This flexibility helps smooth the airflow, decrease energy loss, and maintain stable vortices. According to (Nakata and Liu, 2012), wing flexibility is crucial for making insect flight both efficient and stable. The shape and size of the wing is also important to consider. Table 1 compares the different aspect ratios and their performance. Aspect ratio refers to the ratio of wing span to wing width. A lower aspect ratio means the wing will be shorter and broader, whereas a higher aspect ratio means it’ll be a longer and narrow wing. These variations strongly influence vortex formation and overall flight performance.
+
+
+  Table 1: Wing Geometry and Performance
   <table>
     <tr>
-      <th>£ Cost of repairs</th>
-      <th>Lifespan of repairs (years)</th>
+      <th>Wing Geometry</th>
+      <th>Trend in Aerodynamic Performance (Lift, Efficiency)</th>
     </tr>
     <tr>
-      <td>3.30m</td>
-      <td>4</td>
+      <td>Low aspect ratio (AR ≈ 1.5)</td>
+      <td>Highest peak lift and drag but low overall efficiency </td>
     </tr>
     <tr>
-      <td>2.60m</td>
-      <td>5</td>
+      <td>Intermediate aspect ratio (AR ≈ 4.5 - 6.0)</td>
+      <td>Highest average lift and best overall aerodynamic efficiency </td>
     </tr>
     <tr>
-      <td>17.4m</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>8.80m</td>
-      <td>9</td>
+      <td>High aspect ratio (AR > ~6 -7.5)</td>
+      <td>Lift and drag decrease and efficiency drops due to vortex detachment near wingtips </td>
     </tr>
   </table>
 </p>
   
-    <a href=”https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034”>Toshihiko et al (2023).</a>
+    <a href=”https://www.proquest.com/docview/2670165654?accountid=17256&pq-origsite=primo&sourcetype=Scholarly%20Journals”> (Li & Nabawy, 2022).</a>
 
      <h3 id="References">References</h3>
      <p>
